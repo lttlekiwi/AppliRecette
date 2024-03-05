@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Page de connexion</string>
+    <string name="nom_appli">Flo\'s recipes</string>
+    <string name="se_co">Se connecter</string>
+    <string name="s_insc">S\'inscrire</string>
+    <string name="goback">Revenir en arrière</string>
+    <string name="email">Email</string>
+    <string name="title_activity_recette">Recette</string>
+</resources>

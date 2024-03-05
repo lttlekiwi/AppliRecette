@@ -1,0 +1,212 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    android:background="@color/beige"
+    android:id="@+id/container">
+
+    <androidx.core.widget.NestedScrollView
+        android:id="@+id/scrollView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/beige"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+            <TextView
+                android:layout_width="346dp"
+                android:layout_height="41dp"
+                android:layout_centerHorizontal="true"
+                android:text="Ajoutes une recette :"
+                android:textAlignment="center"
+                android:textColor="@color/marron_clair"
+                android:textSize="24sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/textNomRecettes"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Nom de votre recette :"
+                android:textAlignment="center"
+                android:textColor="@color/marron_clair"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/editNomRecette"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Ajouter le nom de la recette ici"
+                android:textColor="@color/marron_clair"
+                android:textColorHint="@color/marron_clair" />
+
+            <TextView
+                android:id="@+id/textNumberOfPeople"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text= "Recette pour combien de personne :"
+                android:textAlignment="center"
+                android:textColor="@color/marron_clair"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/editNumberOfPeople"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:hint="Ajouter le nombre de personne ici :"
+                android:textColor="@color/marron_clair"
+                android:textColorHint="@color/marron_clair" />
+
+            <TextView
+                android:id="@+id/textTimeToCook"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text= "Temps de préparation :"
+                android:textAlignment="center"
+                android:textColor="@color/marron_clair"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/editTimeToCook"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:hint="Ajouter le temps de préparation ici :"
+                android:textColor="@color/marron_clair"
+                android:textColorHint="@color/marron_clair" />
+
+            <TextView
+                android:id="@+id/textTimeToSpend"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text= "Temps de cuisson :"
+                android:textAlignment="center"
+                android:textColor="@color/marron_clair"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/editTimeToSpend"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:hint="Ajouter le temps de cuisson ici :"
+                android:textColor="@color/marron_clair"
+                android:textColorHint="@color/marron_clair" />
+
+
+            <TextView
+                android:id="@+id/textIngredients"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Ingrédients :"
+                android:textAlignment="center"
+                android:textColor="@color/marron_clair"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/editIngredients"
+                android:layout_width="245dp"
+                android:layout_height="wrap_content"
+                android:hint="Ajouter les ingrédients ici"
+                android:textColor="@color/marron_clair"
+                android:textColorHint="@color/marron_clair" />
+
+            <Button
+                android:id="@+id/button"
+                android:layout_width="117dp"
+                android:layout_height="wrap_content"
+                android:text="Ajouter" />
+
+            <ListView
+                android:id="@+id/ingredientsList"
+                android:layout_width="wrap_content"
+                android:layout_height="150dp"
+                android:minHeight="150dp"
+                />
+
+            <TextView
+                android:id="@+id/textEtapes"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Étapes :"
+                android:textAlignment="center"
+                android:textColor="@color/marron_clair"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/editSteps"
+                android:layout_width="245dp"
+                android:layout_height="wrap_content"
+                android:hint="Ajouter les étapes ici"
+                android:textColor="@color/marron_clair"
+                android:textColorHint="@color/marron_clair" />
+
+            <Button
+                android:id="@+id/button2"
+                android:layout_width="117dp"
+                android:layout_height="wrap_content"
+                android:text="Ajouter" />
+
+
+            <ListView
+                android:id="@+id/stepsList"
+                android:layout_width="wrap_content"
+                android:layout_height="150dp"
+                android:minHeight="150dp"
+                />
+
+            <TextView
+                android:id="@+id/textEnd"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Commentaire :"
+                android:textAlignment="center"
+                android:textColor="@color/marron_clair"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/editEnd"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:hint="Ajouter un commentaire ici"
+                android:textColor="@color/marron_clair"
+                android:textColorHint="@color/marron_clair" />
+
+            <TextView
+                android:id="@+id/boutonajoutrecettes"
+                android:layout_width="121dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/editSteps"
+                android:layout_centerHorizontal="true"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="20dp"
+                android:background="@color/marron_clair"
+                android:text="Ajouter"
+                android:textAlignment="center"
+                android:textSize="20dp" />
+
+            <TextView
+                android:id="@+id/goback"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/boutonajoutrecettes"
+                android:layout_centerHorizontal="true"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="20dp"
+                android:text="@string/goback"
+                android:textAlignment="center"
+                android:textColor="@color/marron_clair" />
+
+
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+</RelativeLayout>

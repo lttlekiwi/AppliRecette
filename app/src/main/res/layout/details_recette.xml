@@ -1,0 +1,326 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/beige">
+
+
+    <TextView
+        android:id="@+id/titleDetails"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp"
+        android:textSize="25dp"
+        android:textColor="@color/marron_clair"
+        tools:text="Nom de la recette" />
+
+    <TextView
+        android:id="@+id/userpseudo"
+        android:layout_width="3000dp"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:textSize="20dp"
+        android:textColor="@color/marron_clair"
+        tools:text="Créée par :"
+        android:textAlignment="center"
+        android:layout_below="@id/titleDetails"/>
+
+    <TextView
+        android:id="@+id/ajoutlike"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="16dp"
+        android:textSize="15dp"
+        android:textColor="@color/marron_clair"
+        android:text="Ajouter cette recette à la liste des j'aimes :"
+        android:textAlignment="center"
+        android:layout_below="@id/userpseudo"/>
+
+
+    <TextView
+        android:id="@+id/retourarriere"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="X"
+        android:textColor="@color/marron_clair"
+        android:textSize="35dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="350dp"
+        />
+
+    <TextView
+        android:id="@+id/textNumberOfPeople"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Pour :"
+        android:textAlignment="center"
+        android:textColor="@color/marron_clair"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:layout_below="@id/ajoutlike"/>
+
+    <TextView
+        android:id="@+id/editNumberOfPeople"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textNumberOfPeople"
+        android:layout_marginTop="2dp"
+        android:text="nombre de "
+        android:textAlignment="center"
+        android:textColor="@color/marron_clair"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/personnes"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textNumberOfPeople"
+        android:layout_toEndOf="@id/editNumberOfPeople"
+        android:layout_marginTop="2dp"
+        android:text=" personnes"
+        android:textAlignment="center"
+        android:textColor="@color/marron_clair"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/textTimeToCook"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Temps de cuisson:"
+        android:textAlignment="center"
+        android:textColor="@color/marron_clair"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:layout_below="@id/editNumberOfPeople"/>
+
+    <TextView
+        android:id="@+id/editTimeToCook"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textTimeToCook"
+        android:layout_marginTop="2dp"
+        android:text="X "
+        android:textAlignment="center"
+        android:textColor="@color/marron_clair"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/minutes"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textTimeToCook"
+        android:layout_toEndOf="@id/editTimeToCook"
+        android:layout_marginTop="2dp"
+        android:text=" minutes"
+        android:textAlignment="center"
+        android:textColor="@color/marron_clair"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/textTimeToSpend"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Temps de préparation:"
+        android:textAlignment="center"
+        android:textColor="@color/marron_clair"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:layout_below="@id/editTimeToCook"/>
+
+    <TextView
+        android:id="@+id/editTimeToSpend"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textTimeToSpend"
+        android:layout_marginTop="2dp"
+        android:text="X "
+        android:textAlignment="center"
+        android:textColor="@color/marron_clair"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/minutes1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textTimeToSpend"
+        android:layout_toEndOf="@id/editTimeToSpend"
+        android:layout_marginTop="2dp"
+        android:text=" minutes"
+        android:textAlignment="center"
+        android:textColor="@color/marron_clair"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+
+    <TextView
+        android:id="@+id/textIngredients"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Ingrédients :"
+        android:layout_below="@id/editTimeToSpend"
+        android:textAlignment="center"
+        android:textColor="@color/marron_clair"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+
+    <ListView
+        android:id="@+id/listIngredients"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textIngredients"
+        android:layout_marginTop="0dp"></ListView>
+
+    <TextView
+        android:id="@+id/textEtapes"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Étapes :"
+        android:textAlignment="center"
+        android:textColor="@color/marron_clair"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:layout_below="@id/listIngredients"/>
+
+    <ListView
+        android:id="@+id/listEtapes"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textEtapes" />
+
+    <TextView
+        android:id="@+id/textEnd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Commentaire :"
+        android:textAlignment="center"
+        android:textColor="@color/marron_clair"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:layout_below="@id/listEtapes"/>
+
+    <TextView
+        android:id="@+id/editEnd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="2dp"
+        android:text="Commentaire"
+        android:layout_below="@id/textEnd"
+        android:textAlignment="center"
+        android:textColor="@color/marron_clair"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/firststar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:text="☆"
+        android:textAlignment="center"
+        android:textColor="@color/marron_clair"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:layout_below="@id/editEnd"/>
+
+    <TextView
+        android:id="@+id/secondstar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:layout_marginLeft="20dp"
+        android:text="☆"
+        android:textAlignment="center"
+        android:textColor="@color/marron_clair"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:layout_below="@id/editEnd"/>
+
+    <TextView
+    android:id="@+id/thirdstar"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="15dp"
+    android:layout_marginLeft="40dp"
+    android:text="☆"
+    android:textAlignment="center"
+    android:textColor="@color/marron_clair"
+    android:textSize="18sp"
+    android:textStyle="bold"
+    android:layout_below="@id/editEnd"/>
+
+    <TextView
+        android:id="@+id/fourstar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:layout_marginLeft="60dp"
+        android:text="☆"
+        android:textAlignment="center"
+        android:textColor="@color/marron_clair"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:layout_below="@id/editEnd"/>
+
+    <TextView
+        android:id="@+id/fivestar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:layout_marginLeft="80dp"
+        android:text="☆"
+        android:textAlignment="center"
+        android:textColor="@color/marron_clair"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:layout_below="@id/editEnd"/>
+
+    <TextView
+        android:id="@+id/valuetext"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="2dp"
+        android:text="Vous avez mis la note de :"
+        android:textAlignment="center"
+        android:textColor="@color/marron_clair"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:layout_below="@id/firststar"/>
+
+    <TextView
+        android:id="@+id/valueedit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="2dp"
+        android:layout_marginLeft="220dp"
+        android:text=""
+        android:textAlignment="center"
+        android:textColor="@color/marron_clair"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:layout_below="@id/firststar"/>
+
+    <TextView
+        android:id="@+id/validervalue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="2dp"
+        android:text="Valider votre note ici"
+        android:textAlignment="center"
+        android:textColor="@color/marron_clair"
+        android:textSize="22sp"
+        android:textStyle="bold"
+        android:layout_below="@id/valuetext"/>
+
+
+</RelativeLayout>

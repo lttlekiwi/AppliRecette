@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    android:background="@color/beige">
+
+    <TextView
+        android:id="@+id/tv_hello_world"
+        android:layout_width="142dp"
+        android:layout_height="41dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:background="@color/marron_clair"
+        android:text="@string/nom_appli"
+        android:textAlignment="center"
+        android:textSize="25dp" />
+
+
+    <TextView
+        android:id="@+id/textpseudo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Choississez votre pseudo :"
+        android:layout_below="@id/tv_hello_world"
+        android:layout_marginTop="180dp"
+        android:layout_marginLeft="100dp"
+        android:layout_centerHorizontal="true"
+        android:textSize="20dp"/>
+
+
+    <EditText
+        android:id="@+id/editPseudo"
+        android:layout_width="wrap_content"
+        android:layout_height="48dp"
+        android:layout_below="@id/textpseudo"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="21dp"
+        android:ems="10"
+        android:hint="Entrez un pseudo ici"
+        android:inputType="textEmailAddress" />
+
+    <TextView
+        android:id="@+id/boutonvalider"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/s_insc"
+        android:layout_below="@id/editPseudo"
+        android:layout_marginTop="250dp"
+        android:layout_centerHorizontal="true"
+        android:textSize="20dp"
+        android:background="@color/marron_clair"/>
+
+
+</RelativeLayout>
